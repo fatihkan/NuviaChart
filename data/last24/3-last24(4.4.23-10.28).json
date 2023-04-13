@@ -1,0 +1,662 @@
+{
+  "report": {
+    "data": [
+      {
+        "time": "2023-04-03T07:28:16.190Z",
+        "targetTemperature": null,
+        "combiStateOn": false,
+        "pairLost": false
+      },
+      {
+        "time": "2023-04-03T07:28:17.190Z",
+        "combiStateOn": false,
+        "pairLost": false,
+        "targetTemperature": null,
+        "temperature": 20.8
+      },
+      {
+        "time": "2023-04-03T07:30:27.921Z",
+        "targetTemperature": null,
+        "temperature": 20.9
+      },
+      {
+        "time": "2023-04-03T07:37:58.373Z",
+        "targetTemperature": null,
+        "temperature": 21
+      },
+      {
+        "time": "2023-04-03T07:43:28.703Z",
+        "targetTemperature": null,
+        "temperature": 21.1
+      },
+      {
+        "time": "2023-04-03T07:46:28.881Z",
+        "targetTemperature": null,
+        "temperature": 21.2
+      },
+      {
+        "time": "2023-04-03T07:48:59.032Z",
+        "targetTemperature": null,
+        "temperature": 21.3
+      },
+      {
+        "time": "2023-04-03T07:52:59.273Z",
+        "targetTemperature": null,
+        "temperature": 21.5
+      },
+      {
+        "time": "2023-04-03T07:58:59.634Z",
+        "targetTemperature": null,
+        "temperature": 21.6
+      },
+      {
+        "time": "2023-04-03T08:01:46.305Z",
+        "outsideTemperature": 13
+      },
+      {
+        "time": "2023-04-03T08:03:29.904Z",
+        "targetTemperature": null,
+        "temperature": 21.7
+      },
+      {
+        "time": "2023-04-03T08:11:30.386Z",
+        "targetTemperature": null,
+        "temperature": 21.8
+      },
+      {
+        "time": "2023-04-03T08:16:30.689Z",
+        "targetTemperature": null,
+        "temperature": 21.9
+      },
+      {
+        "time": "2023-04-03T08:26:31.287Z",
+        "targetTemperature": null,
+        "temperature": 22
+      },
+      {
+        "time": "2023-04-03T08:33:31.711Z",
+        "targetTemperature": null,
+        "temperature": 22.1
+      },
+      {
+        "time": "2023-04-03T08:39:32.069Z",
+        "targetTemperature": null,
+        "temperature": 22.3
+      },
+      {
+        "time": "2023-04-03T08:45:32.430Z",
+        "targetTemperature": null,
+        "temperature": 22.4
+      },
+      {
+        "time": "2023-04-03T08:56:03.060Z",
+        "targetTemperature": null,
+        "temperature": 22.3
+      },
+      {
+        "time": "2023-04-03T09:01:33.428Z",
+        "outsideTemperature": 17
+      },
+      {
+        "time": "2023-04-03T09:14:04.143Z",
+        "targetTemperature": null,
+        "temperature": 22.4
+      },
+      {
+        "time": "2023-04-03T09:31:05.164Z",
+        "targetTemperature": null,
+        "temperature": 22.5
+      },
+      {
+        "time": "2023-04-03T10:01:06.969Z",
+        "targetTemperature": null,
+        "temperature": 22.6
+      },
+      {
+        "time": "2023-04-03T10:01:24.974Z",
+        "outsideTemperature": 19
+      },
+      {
+        "time": "2023-04-03T10:14:37.780Z",
+        "targetTemperature": null,
+        "temperature": 22.7
+      },
+      {
+        "time": "2023-04-03T10:37:09.133Z",
+        "targetTemperature": null,
+        "temperature": 22.8
+      },
+      {
+        "time": "2023-04-03T10:47:39.764Z",
+        "targetTemperature": null,
+        "temperature": 22.9
+      },
+      {
+        "time": "2023-04-03T10:54:40.185Z",
+        "targetTemperature": null,
+        "temperature": 23
+      },
+      {
+        "time": "2023-04-03T11:01:40.582Z",
+        "outsideTemperature": 19
+      },
+      {
+        "time": "2023-04-03T11:25:12.017Z",
+        "targetTemperature": null,
+        "temperature": 23.1
+      },
+      {
+        "time": "2023-04-03T11:33:42.528Z",
+        "targetTemperature": null,
+        "temperature": 23.2
+      },
+      {
+        "time": "2023-04-03T12:02:02.243Z",
+        "outsideTemperature": 19
+      },
+      {
+        "time": "2023-04-03T12:04:14.362Z",
+        "targetTemperature": null,
+        "temperature": 23.1
+      },
+      {
+        "time": "2023-04-03T12:34:46.197Z",
+        "targetTemperature": null,
+        "temperature": 23
+      },
+      {
+        "time": "2023-04-03T12:44:16.768Z",
+        "targetTemperature": null,
+        "temperature": 22.9
+      },
+      {
+        "time": "2023-04-03T13:01:17.849Z",
+        "targetTemperature": null,
+        "temperature": 22.8
+      },
+      {
+        "time": "2023-04-03T13:01:57.745Z",
+        "outsideTemperature": 20
+      },
+      {
+        "time": "2023-04-03T13:31:49.625Z",
+        "targetTemperature": null,
+        "temperature": 22.8
+      },
+      {
+        "time": "2023-04-03T13:55:51.072Z",
+        "targetTemperature": null,
+        "temperature": 22.6
+      },
+      {
+        "time": "2023-04-03T14:01:48.464Z",
+        "outsideTemperature": 19
+      },
+      {
+        "time": "2023-04-03T14:20:22.536Z",
+        "targetTemperature": null,
+        "temperature": 22.5
+      },
+      {
+        "time": "2023-04-03T14:31:53.227Z",
+        "targetTemperature": null,
+        "temperature": 22.4
+      },
+      {
+        "time": "2023-04-03T14:46:54.146Z",
+        "targetTemperature": null,
+        "temperature": 22.3
+      },
+      {
+        "time": "2023-04-03T14:58:54.849Z",
+        "targetTemperature": null,
+        "temperature": 22.2
+      },
+      {
+        "time": "2023-04-03T15:01:31.401Z",
+        "outsideTemperature": 17
+      },
+      {
+        "time": "2023-04-03T15:15:55.871Z",
+        "targetTemperature": null,
+        "temperature": 22.1
+      },
+      {
+        "time": "2023-04-03T15:36:27.104Z",
+        "targetTemperature": null,
+        "temperature": 22
+      },
+      {
+        "time": "2023-04-03T16:00:28.546Z",
+        "targetTemperature": null,
+        "temperature": 21.9
+      },
+      {
+        "time": "2023-04-03T16:01:41.558Z",
+        "outsideTemperature": 16
+      },
+      {
+        "time": "2023-04-03T16:16:59.540Z",
+        "targetTemperature": null,
+        "temperature": 21.8
+      },
+      {
+        "time": "2023-04-03T16:41:31.013Z",
+        "targetTemperature": null,
+        "temperature": 21.6
+      },
+      {
+        "time": "2023-04-03T17:01:44.700Z",
+        "outsideTemperature": 15
+      },
+      {
+        "time": "2023-04-03T17:10:02.728Z",
+        "targetTemperature": null,
+        "temperature": 21.5
+      },
+      {
+        "time": "2023-04-03T17:40:34.558Z",
+        "targetTemperature": null,
+        "temperature": 21.5
+      },
+      {
+        "time": "2023-04-03T18:01:35.254Z",
+        "outsideTemperature": 15
+      },
+      {
+        "time": "2023-04-03T18:11:06.391Z",
+        "targetTemperature": null,
+        "temperature": 21.5
+      },
+      {
+        "time": "2023-04-03T18:33:37.743Z",
+        "targetTemperature": null,
+        "temperature": 21.6
+      },
+      {
+        "time": "2023-04-03T18:37:07.956Z",
+        "targetTemperature": null,
+        "temperature": 21.7
+      },
+      {
+        "time": "2023-04-03T18:44:08.378Z",
+        "targetTemperature": null,
+        "temperature": 21.8
+      },
+      {
+        "time": "2023-04-03T18:55:09.039Z",
+        "targetTemperature": null,
+        "temperature": 21.9
+      },
+      {
+        "time": "2023-04-03T19:01:44.971Z",
+        "outsideTemperature": 15
+      },
+      {
+        "time": "2023-04-03T19:07:09.757Z",
+        "targetTemperature": null,
+        "temperature": 22
+      },
+      {
+        "time": "2023-04-03T19:37:41.595Z",
+        "targetTemperature": null,
+        "temperature": 22.1
+      },
+      {
+        "time": "2023-04-03T19:39:11.683Z",
+        "targetTemperature": null,
+        "temperature": 22
+      },
+      {
+        "time": "2023-04-03T19:56:12.705Z",
+        "targetTemperature": null,
+        "temperature": 21.9
+      },
+      {
+        "time": "2023-04-03T20:01:39.443Z",
+        "outsideTemperature": 15
+      },
+      {
+        "time": "2023-04-03T20:03:13.126Z",
+        "targetTemperature": null,
+        "temperature": 21.8
+      },
+      {
+        "time": "2023-04-03T20:13:43.755Z",
+        "targetTemperature": null,
+        "temperature": 21.7
+      },
+      {
+        "time": "2023-04-03T20:23:44.355Z",
+        "targetTemperature": null,
+        "temperature": 21.6
+      },
+      {
+        "time": "2023-04-03T20:42:15.468Z",
+        "targetTemperature": null,
+        "temperature": 21.4
+      },
+      {
+        "time": "2023-04-03T20:56:46.339Z",
+        "targetTemperature": null,
+        "temperature": 21.3
+      },
+      {
+        "time": "2023-04-03T21:01:55.735Z",
+        "outsideTemperature": 15
+      },
+      {
+        "time": "2023-04-03T21:24:17.993Z",
+        "targetTemperature": null,
+        "temperature": 21.2
+      },
+      {
+        "time": "2023-04-03T21:54:49.824Z",
+        "targetTemperature": null,
+        "temperature": 21.2
+      },
+      {
+        "time": "2023-04-03T22:01:59.989Z",
+        "outsideTemperature": 15
+      },
+      {
+        "time": "2023-04-03T22:25:21.658Z",
+        "targetTemperature": null,
+        "temperature": 21.1
+      },
+      {
+        "time": "2023-04-03T22:55:53.491Z",
+        "targetTemperature": null,
+        "temperature": 21
+      },
+      {
+        "time": "2023-04-03T23:01:43.876Z",
+        "outsideTemperature": 14
+      },
+      {
+        "time": "2023-04-03T23:26:25.324Z",
+        "targetTemperature": null,
+        "temperature": 21
+      },
+      {
+        "time": "2023-04-03T23:56:57.157Z",
+        "targetTemperature": null,
+        "temperature": 21
+      },
+      {
+        "time": "2023-04-04T00:01:20.279Z",
+        "outsideTemperature": 14
+      },
+      {
+        "time": "2023-04-04T00:18:28.465Z",
+        "targetTemperature": null,
+        "temperature": 20.8
+      },
+      {
+        "time": "2023-04-04T00:49:00.286Z",
+        "targetTemperature": null,
+        "temperature": 20.8
+      },
+      {
+        "time": "2023-04-04T01:01:44.909Z",
+        "outsideTemperature": 14
+      },
+      {
+        "time": "2023-04-04T01:19:32.117Z",
+        "targetTemperature": null,
+        "temperature": 20.8
+      },
+      {
+        "time": "2023-04-04T01:50:03.950Z",
+        "targetTemperature": null,
+        "temperature": 20.7
+      },
+      {
+        "time": "2023-04-04T02:01:51.463Z",
+        "outsideTemperature": 12
+      },
+      {
+        "time": "2023-04-04T02:20:35.783Z",
+        "targetTemperature": null,
+        "temperature": 20.7
+      },
+      {
+        "time": "2023-04-04T02:51:07.613Z",
+        "targetTemperature": null,
+        "temperature": 20.6
+      },
+      {
+        "time": "2023-04-04T03:02:03.467Z",
+        "outsideTemperature": 12
+      },
+      {
+        "time": "2023-04-04T03:21:39.449Z",
+        "targetTemperature": null,
+        "temperature": 20.6
+      },
+      {
+        "time": "2023-04-04T03:52:11.284Z",
+        "targetTemperature": null,
+        "temperature": 20.5
+      },
+      {
+        "time": "2023-04-04T04:02:00.302Z",
+        "outsideTemperature": 11
+      },
+      {
+        "time": "2023-04-04T04:04:05.977Z",
+        "targetTemperature": null,
+        "combiStateOn": false,
+        "pairLost": false
+      },
+      {
+        "time": "2023-04-04T04:04:06.977Z",
+        "combiStateOn": true,
+        "pairLost": false,
+        "offline": false
+      },
+      {
+        "time": "2023-04-04T04:14:42.634Z",
+        "targetTemperature": null,
+        "temperature": 20.7
+      },
+      {
+        "time": "2023-04-04T04:19:08.182Z",
+        "targetTemperature": null,
+        "combiStateOn": true,
+        "pairLost": false
+      },
+      {
+        "time": "2023-04-04T04:19:09.182Z",
+        "combiStateOn": false,
+        "pairLost": false,
+        "offline": false
+      },
+      {
+        "time": "2023-04-04T04:20:12.965Z",
+        "targetTemperature": null,
+        "temperature": 20.8
+      },
+      {
+        "time": "2023-04-04T04:23:43.178Z",
+        "targetTemperature": null,
+        "temperature": 20.9
+      },
+      {
+        "time": "2023-04-04T04:27:13.386Z",
+        "targetTemperature": null,
+        "temperature": 21
+      },
+      {
+        "time": "2023-04-04T04:33:13.746Z",
+        "targetTemperature": null,
+        "temperature": 21.1
+      },
+      {
+        "time": "2023-04-04T04:39:44.137Z",
+        "targetTemperature": null,
+        "temperature": 21.2
+      },
+      {
+        "time": "2023-04-04T04:44:14.407Z",
+        "targetTemperature": null,
+        "temperature": 21.3
+      },
+      {
+        "time": "2023-04-04T04:52:14.888Z",
+        "targetTemperature": null,
+        "temperature": 21.5
+      },
+      {
+        "time": "2023-04-04T05:02:06.228Z",
+        "outsideTemperature": 12
+      },
+      {
+        "time": "2023-04-04T05:07:45.820Z",
+        "targetTemperature": null,
+        "temperature": 21.6
+      },
+      {
+        "time": "2023-04-04T05:15:16.274Z",
+        "targetTemperature": null,
+        "temperature": 21.7
+      },
+      {
+        "time": "2023-04-04T05:28:17.105Z",
+        "targetTemperature": null,
+        "temperature": 21.8
+      },
+      {
+        "time": "2023-04-04T05:45:18.070Z",
+        "targetTemperature": null,
+        "temperature": 21.9
+      },
+      {
+        "time": "2023-04-04T06:01:08.539Z",
+        "outsideTemperature": 11
+      },
+      {
+        "time": "2023-04-04T06:11:19.633Z",
+        "targetTemperature": null,
+        "temperature": 22
+      },
+      {
+        "time": "2023-04-04T06:21:20.235Z",
+        "targetTemperature": null,
+        "temperature": 22.1
+      },
+      {
+        "time": "2023-04-04T06:33:50.987Z",
+        "targetTemperature": null,
+        "temperature": 22.3
+      },
+      {
+        "time": "2023-04-04T06:38:21.256Z",
+        "targetTemperature": null,
+        "temperature": 22.4
+      },
+      {
+        "time": "2023-04-04T06:43:21.559Z",
+        "targetTemperature": null,
+        "temperature": 22.5
+      },
+      {
+        "time": "2023-04-04T06:49:21.918Z",
+        "targetTemperature": null,
+        "temperature": 22.6
+      },
+      {
+        "time": "2023-04-04T06:50:52.010Z",
+        "targetTemperature": null,
+        "temperature": 22.7
+      },
+      {
+        "time": "2023-04-04T06:53:52.189Z",
+        "targetTemperature": null,
+        "temperature": 22.8
+      },
+      {
+        "time": "2023-04-04T06:58:22.460Z",
+        "targetTemperature": null,
+        "temperature": 23
+      },
+      {
+        "time": "2023-04-04T07:01:31.889Z",
+        "outsideTemperature": 13
+      },
+      {
+        "time": "2023-04-04T07:04:22.822Z",
+        "targetTemperature": null,
+        "temperature": 23.1
+      },
+      {
+        "time": "2023-04-04T07:08:53.092Z",
+        "targetTemperature": null,
+        "temperature": 23.2
+      },
+      {
+        "time": "2023-04-04T07:13:53.393Z",
+        "targetTemperature": null,
+        "temperature": 23.3
+      },
+      {
+        "time": "2023-04-04T07:15:53.511Z",
+        "targetTemperature": null,
+        "temperature": 23.4
+      },
+      {
+        "time": "2023-04-04T07:24:24.023Z",
+        "targetTemperature": null,
+        "temperature": 23.3
+      },
+      {
+        "time": "2023-04-04T07:28:17.190Z",
+        "temperature": 23.3
+      }
+    ],
+    "stats": {
+      "placeAverageTemperature": 15.083333333333336,
+      "maxTemperature": 23.4,
+      "minTemperature": 0,
+      "maxHumidity": 56.9,
+      "minHumidity": 51.1,
+      "networkQuality": 1,
+      "offlineFor": 0
+    },
+    "summary": {
+      "runtimes": {
+        "total": 902,
+        "home": 0,
+        "sleep": 0,
+        "away": 0,
+        "custom": 0,
+        "frozen": 902
+      },
+      "averageTemperatures": {
+        "total": 21.9,
+        "home": null,
+        "sleep": null,
+        "away": null,
+        "custom": null,
+        "frozen": 21.9
+      },
+      "averageTargetTemperatures": {
+        "total": 0,
+        "home": null,
+        "sleep": null,
+        "away": null,
+        "custom": null,
+        "frozen": 0
+      },
+      "acRuntimes": {
+        "total": 0,
+        "home": 0,
+        "sleep": 0,
+        "away": 0,
+        "custom": 0,
+        "frozen": 0
+      }
+    }
+  },
+  "ok": 1
+}
