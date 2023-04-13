@@ -1,5 +1,5 @@
 /* eslint-disable no-magic-numbers */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { VictoryChart } from "victory-chart";
 import { VictoryStack } from "victory-stack";
 import { VictoryGroup } from "victory-group";
@@ -14,45 +14,67 @@ import { VictoryTooltip } from "victory-tooltip";
 import { VictoryVoronoiContainer } from "victory-voronoi-container";
 import { createContainer } from "victory-create-container";
 import dayjs from "dayjs";
-import { VictoryLabel } from "victory-core";
+import { VictoryLabel, VictoryTheme } from "victory-core";
 const Chart = (Json) => {
   const chartData = Json.Json;
   const axisInfo = Json.axisInfo;
   const replacer = (key, value) => (value === undefined ? null : value);
   const [value, setValue] = useState(null);
   const VictoryCustomContainer = createContainer("cursor", "voronoi");
+
+  const degreeLoop = (minY, maxY) => {
+    let count = (maxY - minY) / 5 - 1;
+    let centerData = [];
+    centerData[0] = minY;
+    for (let i = 1; i <= count; ++i) {
+      centerData[i] = maxY - 5 * i;
+    }
+    centerData[count + 1] = maxY;
+    return centerData;
+  };
   return (
     <>
       <div>
         <div className="demo">
           <VictoryChart
-            width={400}
-            height={200}
+            width={500}
+            height={250}
+            responsive={false}
             scale={{ x: "time" }}
-            domain={{
-              y: [axisInfo.minY, axisInfo.maxY],
-            }}
+            events={[{ childName: "all" }]}
+            domain={{ y: [axisInfo.minY, axisInfo.maxY] }}
+            theme={VictoryTheme.material}
             containerComponent={
               <VictoryCustomContainer
                 voronoiDimension="x"
                 cursorDimension="x"
                 labels={({ datum }) => {
-                  return `${datum.childName}: ${datum._y}`;
+                  console.log(datum);
+                  let displayData = "";
+                  if (datum.childName === "temperature") {
+                    displayData = " -- " + datum.time.format("HH:mm");
+                  }
+                  displayData = datum._y + displayData;
+                  if (datum._y) {
+                    if (datum.childName === "combiStateOn") {
+                      return `${datum.childName}: on`;
+                    }
+                    return `${datum.childName}: ${displayData}`;
+                  }
                 }}
                 onActivated={(datum) => {}}
                 labelComponent={
                   <VictoryTooltip
                     cornerRadius={10}
                     style={{
-                      fontSize: 16,
+                      fontSize: 11,
                       fill: "white",
-                      padding: 10,
-                      borderRadius: 5,
+                      padding: 2,
                     }}
                     flyoutStyle={{
                       stroke: "black",
-                      strokeWidth: 1,
-                      fill: "black",
+                      strokeWidth: 0,
+                      fill: "#00000090",
                       borderRadius: 5,
                     }}
                   />
@@ -60,6 +82,22 @@ const Chart = (Json) => {
               />
             }
           >
+            <VictoryAxis
+              tickFormat={(t) => `${t} °C`}
+              dependentAxis
+              tickValues={degreeLoop(axisInfo.minY, axisInfo.maxY)}
+            />
+            <VictoryAxis
+              tickCount={3}
+              tickValues={[
+                dayjs(axisInfo.minX),
+                dayjs(axisInfo.minX).add(6, "hour"),
+                dayjs(axisInfo.minX).add(12, "hour"),
+                dayjs(axisInfo.minX).add(18, "hour"),
+                dayjs(axisInfo.maxX),
+              ]}
+              tickFormat={(t) => `${dayjs(t).format("HH:mm")}`}
+            />
             <VictoryLine
               name="isim"
               sortKey={(item) => item.time}
@@ -109,7 +147,7 @@ const Chart = (Json) => {
               data={chartData}
               x={(item) => new Date(item.time)}
               y={(item) => {
-                if (item.combiStateOn) return 1;
+                if (item.combiStateOn) return axisInfo.minY + 1;
                 return null;
               }}
             />
@@ -120,17 +158,17 @@ const Chart = (Json) => {
               data={chartData}
               x={(item) => new Date(item.time)}
               y={(item) => {
-                if (item.acStateOn) return 2;
+                if (item.acStateOn) return axisInfo.minY + 2;
                 return null;
               }}
             />
-            <VictoryBar
+            <VictoryLine
               name="offline"
-              style={{ data: { fill: "red" } }}
+              style={{ data: { stroke: "red" } }}
               data={chartData}
               x={(item) => new Date(item.time)}
               y={(item) => {
-                if (item.offline) return 2;
+                if (item.offline) return axisInfo.minY + 2;
                 return null;
               }}
             />

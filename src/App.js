@@ -48,6 +48,8 @@ export default function App() {
   const [maxY, setMaxY] = useState(0);
   const [axisInfo, setAxisInfo] = useState(null);
 
+  const [customData, setCustomData] = useState(null);
+
   const [selectedJson, setSelected] = useState("");
   const [lastData, setLastData] = useState(null);
 
@@ -126,6 +128,17 @@ export default function App() {
             <br />
             minY: {minY}, maxY: {maxY}
           </div>
+          <textarea
+            value={customData} // ...force the input's value to match the state variable...
+            onChange={(e) => setCustomData(e.target.value)} // ... and update the state variable on any edits!
+          />
+          <button
+            onClick={() => {
+              buttonHandler({ data: JSON.parse(customData) });
+            }}
+          >
+            Custom Data gönder
+          </button>
         </div>
       </div>
       {lastData && axisInfo && <Chart Json={lastData} axisInfo={axisInfo} />}
