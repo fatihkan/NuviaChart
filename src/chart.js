@@ -21,11 +21,11 @@ const Chart = (Json) => {
       <VictoryChart
         width={400}
         height={200}
+        scale={{ x: "time" }}
         domain={{
-          y: [axisInfo.minY, axisInfo.maxY]
+          y: [axisInfo.minY, axisInfo.maxY],
         }}
       >
-        <VictoryAxis label="Time (ms)" tickValues={[axisInfo.minX]} />
         <VictoryLine
           sortKey={(item) => item.time}
           style={{ data: { stroke: "black", strokeDasharray: "5,5" } }}
@@ -35,7 +35,7 @@ const Chart = (Json) => {
           }}
           y={(item) => {
             if (item.targetTemperature) return item.targetTemperature;
-            return 0;
+            return null;
           }}
           interpolation="step"
         />
@@ -48,7 +48,7 @@ const Chart = (Json) => {
           }}
           y={(item) => {
             if (item.temperature) return item.temperature;
-            return 0;
+            return null;
           }}
           interpolation="step"
         />
@@ -61,30 +61,38 @@ const Chart = (Json) => {
           }}
           y={(item) => {
             if (item.outsideTemperature) return item.outsideTemperature;
-            return 0;
+            return null;
           }}
           interpolation="step"
         />
-        <VictoryLine
+        <VictoryBar
           sortKey={(item) => item.time}
-          style={{ data: { stroke: "blue", strokeWidth: 8 } }}
+          style={{ data: { fill: "blue" } }}
           data={chartData}
           x={(item) => new Date(item.time)}
-          y={(item) => item.combiStateOn}
+          y={(item) => {
+            if (item.combiStateOn) return axisInfo.minY + 1;
+            return null;
+          }}
         />
         <VictoryLine
           sortKey={(item) => item.time}
-          style={{ data: { stroke: "green", strokeWidth: 8 } }}
+          style={{ data: { stroke: "green", strokeWidth: 3 } }}
           data={chartData}
           x={(item) => new Date(item.time)}
-          y={(item) => item.acStateOn}
+          y={(item) => {
+            if (item.acStateOn) return axisInfo.minY + 2;
+            return null;
+          }}
         />
-        <VictoryLine
-          sortKey={(item) => item.time}
-          style={{ data: { stroke: "gray", strokeWidth: 8 } }}
+        <VictoryBar
+          style={{ data: { fill: "red" } }}
           data={chartData}
           x={(item) => new Date(item.time)}
-          y={(item) => item.offline}
+          y={(item) => {
+            if (item.offline) return axisInfo.minY + 2;
+            return null;
+          }}
         />
       </VictoryChart>
     </div>

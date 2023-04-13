@@ -7,16 +7,16 @@ import "./styles.css";
 
 const moment = require("moment");
 
-import last24_1 from "../data/last24/3-last24(4.4.23-10.28).json";
-import last24_2 from "../data/last24/3-last24(4.4.23-12.43).json";
+import last24_1 from "./data/last24/3-last24(4.4.23-10.28).json";
+import last24_2 from "./data/last24/3-last24(4.4.23-12.43).json";
 
-import anyday_1 from "../data/anyday/1-19mart.json";
-import anyday_2 from "../data/anyday/3-offline_end.json";
-import anyday_3 from "../data/anyday/3-offline_start.json";
-import anyday_4 from "../data/anyday/5-01april.json";
-import anyday_5 from "../data/anyday/data2.json";
-import anyday_6 from "../data/anyday/data4.json";
-import anyday_7 from "../data/anyday/data4.json";
+import anyday_1 from "./data/anyday/1-19mart.json";
+import anyday_2 from "./data/anyday/3-offline_end.json";
+import anyday_3 from "./data/anyday/3-offline_start.json";
+import anyday_4 from "./data/anyday/5-01april.json";
+import anyday_5 from "./data/anyday/data2.json";
+import anyday_6 from "./data/anyday/data4.json";
+import anyday_7 from "./data/anyday/data6.json";
 import RemoveWrongData from "./removeWrongData";
 import AxisInfo from "./axisInfo";
 import Chart from "./chart";
@@ -29,12 +29,12 @@ export default function App() {
     { title: "5-01april", data: anyday_4 },
     { title: "data2", data: anyday_5 },
     { title: "data4", data: anyday_6 },
-    { title: "data6", data: anyday_7 }
+    { title: "data6", data: anyday_7 },
   ]);
 
   const [last24JsonList, setLast24DayJson] = useState([
     { title: "3-last24(4.4.23-10.28)", data: last24_1 },
-    { title: "3-last24(4.4.23-12.43)", data: last24_2 }
+    { title: "3-last24(4.4.23-12.43)", data: last24_2 },
   ]);
 
   const [appTime, setAppTime] = useState(0);
@@ -78,7 +78,7 @@ export default function App() {
           display: "flex",
           flexDirection: "row",
           width: "100%",
-          flex: 1
+          flex: 1,
         }}
       >
         <div style={{ flex: 1 }}>
