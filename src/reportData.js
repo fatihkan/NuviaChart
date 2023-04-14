@@ -29,17 +29,22 @@ const ReportData = (defaultJson) => {
   };
 
   //format time
-  let formatTime = cleanData.map((item) => {
-      if (item.time.includes("00:00:00.000Z")) {
-        item.time = dayjs(item.time).subtract(6, "hour");
-      } else {
+  let formatTime = cleanData
+    .map((item) => {
+      // last 24 saat durumunda burda kontrol edilmesi gerekli
+      if (
+        item.time.includes("00:00:00.000Z") ||
+        item.time.includes("23:59:59.999Z")
+      ) {
         item.time = dayjs(item.time).subtract(3, "hour");
+      } else {
+        item.time = dayjs(item.time);
       }
       return item;
     })
     .sort((a, b) => new Date(a.time) - new Date(b.time));
 
-    // fill forward
+  // fill forward
   const fillForwardLastValues = {};
   const fillForward = formatTime.map((obj) => {
     const newObj = { ...obj };
@@ -74,7 +79,7 @@ const ReportData = (defaultJson) => {
     return item;
   });
 
-    // remove wrong data
+  // remove wrong data
   const removeWrongData = targetUpdate.map((item) => {
     if (item.offline) {
       item.combiStateOn = null;
@@ -85,8 +90,10 @@ const ReportData = (defaultJson) => {
     return item;
   });
 
-    // axis info
-  let maxX = removeWrongData[removeWrongData.length - 1].time.format("YYYY-MM-DD HH:mm:ss");
+  // axis info
+  let maxX = removeWrongData[removeWrongData.length - 1].time.format(
+    "YYYY-MM-DD HH:mm:ss"
+  );
   let minX = removeWrongData[0].time.format("YYYY-MM-DD HH:mm:ss");
 
   let newY = [];
