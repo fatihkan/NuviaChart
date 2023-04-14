@@ -1,20 +1,12 @@
 /* eslint-disable no-magic-numbers */
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { VictoryChart } from "victory-chart";
-import { VictoryStack } from "victory-stack";
-import { VictoryGroup } from "victory-group";
 import { VictoryAxis } from "victory-axis";
-import { VictoryBar } from "victory-bar";
 import { VictoryLine } from "victory-line";
-import { VictoryScatter } from "victory-scatter";
-import { VictoryLegend } from "victory-legend";
-import { VictoryZoomContainer } from "victory-zoom-container";
-import { VictoryBrushContainer } from "victory-brush-container";
 import { VictoryTooltip } from "victory-tooltip";
-import { VictoryVoronoiContainer } from "victory-voronoi-container";
 import { createContainer } from "victory-create-container";
 import dayjs from "dayjs";
-import { VictoryLabel, VictoryTheme } from "victory-core";
+import {  VictoryTheme } from "victory-core";
 const Chart = (Json) => {
   const chartData = Json.Json.data;
   const axisInfo = Json.Json.axisInfo;
