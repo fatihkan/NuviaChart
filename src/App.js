@@ -40,8 +40,9 @@ export default function App() {
 
   const [selectedJson, setSelected] = useState("");
   const [lastData, setLastData] = useState(null);
-  const [customData, setCustomData] = useState(null);
+  const [customData, setCustomData] = useState('');
   const buttonHandler = (item) => {
+    setLastData(null);
     setSelected(item.title);
     const start = Date.now();
     const reportData = ReportData(item.data);
@@ -119,7 +120,7 @@ export default function App() {
           </button>
         </div>
       </div>
-      {lastData && <Chart Json={lastData}/>}
+      {lastData !== null ? <Chart Json={lastData}/>: null}
     </div>
   );
 }

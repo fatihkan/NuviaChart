@@ -1,5 +1,5 @@
 /* eslint-disable no-magic-numbers */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { VictoryChart } from "victory-chart";
 import { VictoryAxis } from "victory-axis";
 import { VictoryLine } from "victory-line";
@@ -10,7 +10,6 @@ import {  VictoryTheme } from "victory-core";
 const Chart = (Json) => {
   const chartData = Json.Json.data;
   const axisInfo = Json.Json.axisInfo;
-  const [value, setValue] = useState(null);
   const VictoryCustomContainer = createContainer("cursor", "voronoi");
 
   const degreeLoop = (minY, maxY) => {
@@ -23,6 +22,8 @@ const Chart = (Json) => {
     centerData[count + 1] = maxY;
     return centerData;
   };
+
+
   return (
     <>
       <div>
@@ -31,7 +32,6 @@ const Chart = (Json) => {
             width={500}
             height={250}
             responsive={false}
-            scale={{ x: "time" }}
             events={[{ childName: "all" }]}
             domain={{ y: [axisInfo.minY, axisInfo.maxY] }}
             theme={VictoryTheme.material}
@@ -40,7 +40,6 @@ const Chart = (Json) => {
                 voronoiDimension="x"
                 cursorDimension="x"
                 labels={({ datum }) => {
-                  console.log(datum);
                   let displayData = "";
                   if (datum.childName === "temperature") {
                     displayData = " -- " + datum.time.format("HH:mm");

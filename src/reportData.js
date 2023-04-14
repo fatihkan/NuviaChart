@@ -111,6 +111,7 @@ const ReportData = (defaultJson) => {
     stats: newStats,
     summary: newSummary,
     axisInfo: { maxX, minX, minY, maxY },
+    reset: false,
   };
 
   return { cleanJson, runtime: Date.now() - start };
